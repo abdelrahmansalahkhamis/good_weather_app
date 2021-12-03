@@ -18,6 +18,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //UINavigationBar.appearance().largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
         //UIBarButtonItem.appearance().tintColor = UIColor.white
         
+        print("well well done")
+        
         return true
     }
 
