@@ -14,7 +14,7 @@ class WeatherCell: UITableViewCell {
     
     func configure(_ vm: WeatherViewModel){
         self.cityNameLbl.text = vm.city
-        self.tempratureLbl.text = "\(vm.tempriture.formatAsDegree())"
+        self.tempratureLbl.text = "\(vm.tempreture.formatAsDegree())"
     }
     
 }

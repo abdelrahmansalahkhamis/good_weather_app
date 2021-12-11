@@ -57,9 +57,10 @@
                     </tableView>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Good Weather " largeTitleDisplayMode="always" id="CfL-kc-0jQ">
-                        <barButtonItem key="leftBarButtonItem" title="Settings" id="Cc4-yd-g2J">
+                        <barButtonItem key="leftBarButtonItem" image="740-gear-toolbar.png" id="Cc4-yd-g2J">
+                            <color key="tintColor" systemColor="systemBlueColor"/>
                             <connections>
-                                <segue destination="Xlz-Fd-W9G" kind="presentation" id="Zze-iq-oCh"/>
+                                <segue destination="Xlz-Fd-W9G" kind="presentation" identifier="SettingsTableVC" id="Zze-iq-oCh"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="Ppb-Gt-fgt">
@@ -152,7 +153,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="nXq-6H-cDk">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SettingsCell" id="nXq-6H-cDk">
                                 <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="nXq-6H-cDk" id="iO9-fX-yhy">
@@ -167,7 +168,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Settings" id="mbm-pa-c56">
-                        <barButtonItem key="rightBarButtonItem" title="Done" id="aZH-Zg-jSU"/>
+                        <barButtonItem key="rightBarButtonItem" title="Done" id="aZH-Zg-jSU">
+                            <connections>
+                                <action selector="doneBtnPressed" destination="SAa-9E-CdX" id="o0C-Dw-X5q"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bm6-d1-boX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -217,11 +222,15 @@
         </scene>
     </scenes>
     <resources>
+        <image name="740-gear-toolbar.png" width="22" height="22"/>
         <systemColor name="linkColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

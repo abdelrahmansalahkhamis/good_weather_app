@@ -20,6 +20,9 @@
 		A45A46F3275D4AB4007EA8A7 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45A46F2275D4AB4007EA8A7 /* String+Ext.swift */; };
 		A45A46F7275D4EC8007EA8A7 /* WeatherListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45A46F6275D4EC8007EA8A7 /* WeatherListViewModel.swift */; };
 		A45A46F9275D588E007EA8A7 /* Double+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45A46F8275D588E007EA8A7 /* Double+Ext.swift */; };
+		A45EA4C92762937300F7989B /* 740-gear-toolbar.png in Resources */ = {isa = PBXBuildFile; fileRef = A45EA4C62762937300F7989B /* 740-gear-toolbar.png */; };
+		A45EA4CA2762937300F7989B /* 740-gear-toolbar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A45EA4C72762937300F7989B /* 740-gear-toolbar@2x.png */; };
+		A45EA4CB2762937300F7989B /* 740-gear-toolbar@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A45EA4C82762937300F7989B /* 740-gear-toolbar@3x.png */; };
 		A4C05FC0275EA88C00333A22 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C05FBF275EA88C00333A22 /* SettingsTableViewController.swift */; };
 		A4C05FC2275EAA3F00333A22 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4C05FC1275EAA3F00333A22 /* SettingsViewModel.swift */; };
 		A4D36B77275BC72800F064BE /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D36B76275BC72800F064BE /* WebService.swift */; };
@@ -42,6 +45,9 @@
 		A45A46F2275D4AB4007EA8A7 /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
 		A45A46F6275D4EC8007EA8A7 /* WeatherListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherListViewModel.swift; sourceTree = "<group>"; };
 		A45A46F8275D588E007EA8A7 /* Double+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Ext.swift"; sourceTree = "<group>"; };
+		A45EA4C62762937300F7989B /* 740-gear-toolbar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "740-gear-toolbar.png"; sourceTree = "<group>"; };
+		A45EA4C72762937300F7989B /* 740-gear-toolbar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "740-gear-toolbar@2x.png"; sourceTree = "<group>"; };
+		A45EA4C82762937300F7989B /* 740-gear-toolbar@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "740-gear-toolbar@3x.png"; sourceTree = "<group>"; };
 		A4C05FBF275EA88C00333A22 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		A4C05FC1275EAA3F00333A22 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
 		A4D36B76275BC72800F064BE /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
@@ -78,6 +84,7 @@
 		A41FA2E22757F93C00D3E320 /* GoodWeather */ = {
 			isa = PBXGroup;
 			children = (
+				A45EA4C52762934E00F7989B /* Images */,
 				A45A46F1275D4A9C007EA8A7 /* Extensions */,
 				A45A46EE275D49B6007EA8A7 /* Utils */,
 				A45A46EB275D4941007EA8A7 /* View Models */,
@@ -138,6 +145,16 @@
 				A45A46F8275D588E007EA8A7 /* Double+Ext.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A45EA4C52762934E00F7989B /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				A45EA4C62762937300F7989B /* 740-gear-toolbar.png */,
+				A45EA4C72762937300F7989B /* 740-gear-toolbar@2x.png */,
+				A45EA4C82762937300F7989B /* 740-gear-toolbar@3x.png */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 		A4D36B75275BC71200F064BE /* Services */ = {
@@ -215,7 +232,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A41FA2F02757F94000D3E320 /* LaunchScreen.storyboard in Resources */,
+				A45EA4CA2762937300F7989B /* 740-gear-toolbar@2x.png in Resources */,
+				A45EA4CB2762937300F7989B /* 740-gear-toolbar@3x.png in Resources */,
 				A41FA2ED2757F94000D3E320 /* Assets.xcassets in Resources */,
+				A45EA4C92762937300F7989B /* 740-gear-toolbar.png in Resources */,
 				A41FA2EB2757F93C00D3E320 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -28,18 +28,21 @@ extension Unit{
 class SettingsViewModel{
     let units = Unit.allCases
     
+    private var _selectedUnit: Unit = Unit.fahrenheit
     var selectedUnit: Unit{
         get{
             let userDefaults = UserDefaults.standard
             var unitValue = ""
-            if let value = userDefaults.value(forKey: "unit") as? String{
-                unitValue = value
+            if let value = userDefaults.value(forKey: "Unit") as? String{
+                //unitValue = value
+                return Unit(rawValue: value)!
             }
-            return Unit(rawValue: unitValue)!
+            return _selectedUnit
+            //return Unit(rawValue: unitValue) ?? Unit.celsius
         }
         set{
             let userDefaults = UserDefaults.standard
-            userDefaults.set(newValue.rawValue, forKey: "unit")
+            userDefaults.set(newValue.rawValue, forKey: "Unit")
         }
     }
 }
